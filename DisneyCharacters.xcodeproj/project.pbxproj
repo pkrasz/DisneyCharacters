@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		A8F0265628CFDFE60016B267 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0265528CFDFE60016B267 /* AppDelegate.swift */; };
 		A8F0265828CFDFE60016B267 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0265728CFDFE60016B267 /* SceneDelegate.swift */; };
-		A8F0265A28CFDFE60016B267 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0265928CFDFE60016B267 /* ViewController.swift */; };
-		A8F0265D28CFDFE60016B267 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8F0265B28CFDFE60016B267 /* Main.storyboard */; };
+		A8F0265A28CFDFE60016B267 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0265928CFDFE60016B267 /* MainViewController.swift */; };
 		A8F0265F28CFDFE70016B267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8F0265E28CFDFE70016B267 /* Assets.xcassets */; };
 		A8F0266228CFDFE70016B267 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8F0266028CFDFE70016B267 /* LaunchScreen.storyboard */; };
 		A8F0266D28CFDFE70016B267 /* DisneyCharactersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0266C28CFDFE70016B267 /* DisneyCharactersTests.swift */; };
 		A8F0267728CFDFE70016B267 /* DisneyCharactersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0267628CFDFE70016B267 /* DisneyCharactersUITests.swift */; };
 		A8F0267928CFDFE70016B267 /* DisneyCharactersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0267828CFDFE70016B267 /* DisneyCharactersUITestsLaunchTests.swift */; };
+		A8F0268928CFE2D60016B267 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0268828CFE2D60016B267 /* Coordinator.swift */; };
+		A8F0268B28CFE4560016B267 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0268A28CFE4560016B267 /* MainCoordinator.swift */; };
+		A8F0268D28CFE68E0016B267 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0268C28CFE68E0016B267 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +41,7 @@
 		A8F0265228CFDFE60016B267 /* DisneyCharacters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisneyCharacters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F0265528CFDFE60016B267 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8F0265728CFDFE60016B267 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A8F0265928CFDFE60016B267 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A8F0265C28CFDFE60016B267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A8F0265928CFDFE60016B267 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A8F0265E28CFDFE70016B267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8F0266128CFDFE70016B267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8F0266328CFDFE70016B267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		A8F0267228CFDFE70016B267 /* DisneyCharactersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisneyCharactersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F0267628CFDFE70016B267 /* DisneyCharactersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyCharactersUITests.swift; sourceTree = "<group>"; };
 		A8F0267828CFDFE70016B267 /* DisneyCharactersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyCharactersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A8F0268828CFE2D60016B267 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A8F0268A28CFE4560016B267 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		A8F0268C28CFE68E0016B267 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +103,12 @@
 		A8F0265428CFDFE60016B267 /* DisneyCharacters */ = {
 			isa = PBXGroup;
 			children = (
-				A8F0265528CFDFE60016B267 /* AppDelegate.swift */,
+				A8F0268F28CFEBFB0016B267 /* Coordinators */,
 				A8F0265728CFDFE60016B267 /* SceneDelegate.swift */,
-				A8F0265928CFDFE60016B267 /* ViewController.swift */,
-				A8F0265B28CFDFE60016B267 /* Main.storyboard */,
-				A8F0265E28CFDFE70016B267 /* Assets.xcassets */,
-				A8F0266028CFDFE70016B267 /* LaunchScreen.storyboard */,
-				A8F0266328CFDFE70016B267 /* Info.plist */,
+				A8F0265528CFDFE60016B267 /* AppDelegate.swift */,
+				A8F0268728CFE2AC0016B267 /* Utils */,
+				A8F0268628CFE1660016B267 /* Features */,
+				A8F0268528CFE1110016B267 /* Resources */,
 			);
 			path = DisneyCharacters;
 			sourceTree = "<group>";
@@ -125,6 +128,41 @@
 				A8F0267828CFDFE70016B267 /* DisneyCharactersUITestsLaunchTests.swift */,
 			);
 			path = DisneyCharactersUITests;
+			sourceTree = "<group>";
+		};
+		A8F0268528CFE1110016B267 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8F0266328CFDFE70016B267 /* Info.plist */,
+				A8F0266028CFDFE70016B267 /* LaunchScreen.storyboard */,
+				A8F0265E28CFDFE70016B267 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A8F0268628CFE1660016B267 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A8F0265928CFDFE60016B267 /* MainViewController.swift */,
+				A8F0268C28CFE68E0016B267 /* MainView.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A8F0268728CFE2AC0016B267 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A8F0268F28CFEBFB0016B267 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				A8F0268828CFE2D60016B267 /* Coordinator.swift */,
+				A8F0268A28CFE4560016B267 /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +271,6 @@
 			files = (
 				A8F0266228CFDFE70016B267 /* LaunchScreen.storyboard in Resources */,
 				A8F0265F28CFDFE70016B267 /* Assets.xcassets in Resources */,
-				A8F0265D28CFDFE60016B267 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8F0265A28CFDFE60016B267 /* ViewController.swift in Sources */,
+				A8F0268928CFE2D60016B267 /* Coordinator.swift in Sources */,
+				A8F0268D28CFE68E0016B267 /* MainView.swift in Sources */,
+				A8F0265A28CFDFE60016B267 /* MainViewController.swift in Sources */,
 				A8F0265628CFDFE60016B267 /* AppDelegate.swift in Sources */,
+				A8F0268B28CFE4560016B267 /* MainCoordinator.swift in Sources */,
 				A8F0265828CFDFE60016B267 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +337,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A8F0265B28CFDFE60016B267 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A8F0265C28CFDFE60016B267 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A8F0266028CFDFE70016B267 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,10 +471,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CSZNQJVVWQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DisneyCharacters/Info.plist;
+				INFOPLIST_FILE = DisneyCharacters/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -467,10 +498,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CSZNQJVVWQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DisneyCharacters/Info.plist;
+				INFOPLIST_FILE = DisneyCharacters/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
