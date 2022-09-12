@@ -21,6 +21,7 @@ class MainViewController: UIViewController, Coordinating {
     //MARK: - Initializators
     
     init() {
+        
         super.init(nibName: nil, bundle: nil)
     }
     

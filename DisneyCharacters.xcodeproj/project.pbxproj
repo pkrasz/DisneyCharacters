@@ -18,6 +18,11 @@
 		A8F0268928CFE2D60016B267 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0268828CFE2D60016B267 /* Coordinator.swift */; };
 		A8F0268B28CFE4560016B267 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0268A28CFE4560016B267 /* MainCoordinator.swift */; };
 		A8F0268D28CFE68E0016B267 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0268C28CFE68E0016B267 /* MainView.swift */; };
+		A8F0269128CFF6B80016B267 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0269028CFF6B80016B267 /* ApiClient.swift */; };
+		A8F0269428CFF7A60016B267 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0269328CFF7A60016B267 /* Character.swift */; };
+		A8F026A428CFFBF00016B267 /* ApiClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F0269A28CFFBF00016B267 /* ApiClient.framework */; };
+		A8F026AF28CFFBF00016B267 /* ApiClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F0269A28CFFBF00016B267 /* ApiClient.framework */; };
+		A8F026B028CFFBF00016B267 /* ApiClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8F0269A28CFFBF00016B267 /* ApiClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +40,42 @@
 			remoteGlobalIDString = A8F0265128CFDFE60016B267;
 			remoteInfo = DisneyCharacters;
 		};
+		A8F026A528CFFBF00016B267 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8F0264A28CFDFE60016B267 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8F0269928CFFBF00016B267;
+			remoteInfo = ApiClient;
+		};
+		A8F026A728CFFBF00016B267 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8F0264A28CFDFE60016B267 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8F0265128CFDFE60016B267;
+			remoteInfo = DisneyCharacters;
+		};
+		A8F026AD28CFFBF00016B267 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8F0264A28CFDFE60016B267 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8F0269928CFFBF00016B267;
+			remoteInfo = ApiClient;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A8F026B428CFFBF00016B267 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A8F026B028CFFBF00016B267 /* ApiClient.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A8F0265228CFDFE60016B267 /* DisneyCharacters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisneyCharacters.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +93,10 @@
 		A8F0268828CFE2D60016B267 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A8F0268A28CFE4560016B267 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		A8F0268C28CFE68E0016B267 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A8F0269028CFF6B80016B267 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		A8F0269328CFF7A60016B267 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		A8F0269A28CFFBF00016B267 /* ApiClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ApiClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8F026A328CFFBF00016B267 /* ApiClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApiClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F026AF28CFFBF00016B267 /* ApiClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +119,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8F0269728CFFBF00016B267 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8F026A028CFFBF00016B267 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8F026A428CFFBF00016B267 /* ApiClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +156,8 @@
 				A8F0265228CFDFE60016B267 /* DisneyCharacters.app */,
 				A8F0266828CFDFE70016B267 /* DisneyCharactersTests.xctest */,
 				A8F0267228CFDFE70016B267 /* DisneyCharactersUITests.xctest */,
+				A8F0269A28CFFBF00016B267 /* ApiClient.framework */,
+				A8F026A328CFFBF00016B267 /* ApiClientTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +165,7 @@
 		A8F0265428CFDFE60016B267 /* DisneyCharacters */ = {
 			isa = PBXGroup;
 			children = (
+				A8F0269228CFF7940016B267 /* Models */,
 				A8F0268F28CFEBFB0016B267 /* Coordinators */,
 				A8F0265728CFDFE60016B267 /* SceneDelegate.swift */,
 				A8F0265528CFDFE60016B267 /* AppDelegate.swift */,
@@ -152,6 +215,7 @@
 		A8F0268728CFE2AC0016B267 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				A8F0269028CFF6B80016B267 /* ApiClient.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -165,7 +229,25 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
+		A8F0269228CFF7940016B267 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A8F0269328CFF7A60016B267 /* Character.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A8F0269528CFFBF00016B267 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		A8F0265128CFDFE60016B267 /* DisneyCharacters */ = {
@@ -175,10 +257,12 @@
 				A8F0264E28CFDFE60016B267 /* Sources */,
 				A8F0264F28CFDFE60016B267 /* Frameworks */,
 				A8F0265028CFDFE60016B267 /* Resources */,
+				A8F026B428CFFBF00016B267 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A8F026AE28CFFBF00016B267 /* PBXTargetDependency */,
 			);
 			name = DisneyCharacters;
 			productName = DisneyCharacters;
@@ -221,6 +305,43 @@
 			productReference = A8F0267228CFDFE70016B267 /* DisneyCharactersUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		A8F0269928CFFBF00016B267 /* ApiClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8F026B128CFFBF00016B267 /* Build configuration list for PBXNativeTarget "ApiClient" */;
+			buildPhases = (
+				A8F0269528CFFBF00016B267 /* Headers */,
+				A8F0269628CFFBF00016B267 /* Sources */,
+				A8F0269728CFFBF00016B267 /* Frameworks */,
+				A8F0269828CFFBF00016B267 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ApiClient;
+			productName = ApiClient;
+			productReference = A8F0269A28CFFBF00016B267 /* ApiClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A8F026A228CFFBF00016B267 /* ApiClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8F026B528CFFBF00016B267 /* Build configuration list for PBXNativeTarget "ApiClientTests" */;
+			buildPhases = (
+				A8F0269F28CFFBF00016B267 /* Sources */,
+				A8F026A028CFFBF00016B267 /* Frameworks */,
+				A8F026A128CFFBF00016B267 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8F026A628CFFBF00016B267 /* PBXTargetDependency */,
+				A8F026A828CFFBF00016B267 /* PBXTargetDependency */,
+			);
+			name = ApiClientTests;
+			productName = ApiClientTests;
+			productReference = A8F026A328CFFBF00016B267 /* ApiClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -242,6 +363,13 @@
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = A8F0265128CFDFE60016B267;
 					};
+					A8F0269928CFFBF00016B267 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					A8F026A228CFFBF00016B267 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = A8F0265128CFDFE60016B267;
+					};
 				};
 			};
 			buildConfigurationList = A8F0264D28CFDFE60016B267 /* Build configuration list for PBXProject "DisneyCharacters" */;
@@ -260,6 +388,8 @@
 				A8F0265128CFDFE60016B267 /* DisneyCharacters */,
 				A8F0266728CFDFE70016B267 /* DisneyCharactersTests */,
 				A8F0267128CFDFE70016B267 /* DisneyCharactersUITests */,
+				A8F0269928CFFBF00016B267 /* ApiClient */,
+				A8F026A228CFFBF00016B267 /* ApiClientTests */,
 			);
 		};
 /* End PBXProject section */
@@ -288,6 +418,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A8F0269828CFFBF00016B267 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8F026A128CFFBF00016B267 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -295,12 +439,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F0269128CFF6B80016B267 /* ApiClient.swift in Sources */,
 				A8F0268928CFE2D60016B267 /* Coordinator.swift in Sources */,
 				A8F0268D28CFE68E0016B267 /* MainView.swift in Sources */,
 				A8F0265A28CFDFE60016B267 /* MainViewController.swift in Sources */,
 				A8F0265628CFDFE60016B267 /* AppDelegate.swift in Sources */,
 				A8F0268B28CFE4560016B267 /* MainCoordinator.swift in Sources */,
 				A8F0265828CFDFE60016B267 /* SceneDelegate.swift in Sources */,
+				A8F0269428CFF7A60016B267 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +467,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A8F0269628CFFBF00016B267 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8F0269F28CFFBF00016B267 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -333,6 +493,21 @@
 			isa = PBXTargetDependency;
 			target = A8F0265128CFDFE60016B267 /* DisneyCharacters */;
 			targetProxy = A8F0267328CFDFE70016B267 /* PBXContainerItemProxy */;
+		};
+		A8F026A628CFFBF00016B267 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8F0269928CFFBF00016B267 /* ApiClient */;
+			targetProxy = A8F026A528CFFBF00016B267 /* PBXContainerItemProxy */;
+		};
+		A8F026A828CFFBF00016B267 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8F0265128CFDFE60016B267 /* DisneyCharacters */;
+			targetProxy = A8F026A728CFFBF00016B267 /* PBXContainerItemProxy */;
+		};
+		A8F026AE28CFFBF00016B267 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8F0269928CFFBF00016B267 /* ApiClient */;
+			targetProxy = A8F026AD28CFFBF00016B267 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -592,6 +767,102 @@
 			};
 			name = Release;
 		};
+		A8F026B228CFFBF00016B267 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CSZNQJVVWQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kraszewski.pawel.ApiClient;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A8F026B328CFFBF00016B267 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CSZNQJVVWQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kraszewski.pawel.ApiClient;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A8F026B628CFFBF00016B267 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CSZNQJVVWQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kraszewski.pawel.ApiClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DisneyCharacters.app/DisneyCharacters";
+			};
+			name = Debug;
+		};
+		A8F026B728CFFBF00016B267 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CSZNQJVVWQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kraszewski.pawel.ApiClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DisneyCharacters.app/DisneyCharacters";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -627,6 +898,24 @@
 			buildConfigurations = (
 				A8F0268328CFDFE70016B267 /* Debug */,
 				A8F0268428CFDFE70016B267 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8F026B128CFFBF00016B267 /* Build configuration list for PBXNativeTarget "ApiClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8F026B228CFFBF00016B267 /* Debug */,
+				A8F026B328CFFBF00016B267 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8F026B528CFFBF00016B267 /* Build configuration list for PBXNativeTarget "ApiClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8F026B628CFFBF00016B267 /* Debug */,
+				A8F026B728CFFBF00016B267 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
