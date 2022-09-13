@@ -9,6 +9,15 @@ import UIKit
 
 class MainView: UIView {
 
+    //MARK: - SubView
+
+    let disneyTableView: UITableView = {
+        let tableView = UITableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.backgroundColor = .white
+        return tableView
+    }()
+    
     // MARK: - Initiliazation
     
     override init(frame: CGRect) {
@@ -28,7 +37,19 @@ class MainView: UIView {
     func setupView() {
         backgroundColor = UIColor.systemCyan
     }
-    func setupSubviews() {}
-    func setupConstraints() {}
+    func setupSubviews() {
+        [disneyTableView]
+            .forEach(addSubview)
+    }
+    func setupConstraints() {
+        NSLayoutConstraint.activate([
+           
+           disneyTableView.topAnchor.constraint(equalTo: topAnchor, constant: 110),
+           disneyTableView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
+           disneyTableView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -13),
+           disneyTableView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -40)
+          
+        ])
+    }
 }
 
