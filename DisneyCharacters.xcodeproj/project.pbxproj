@@ -26,6 +26,7 @@
 		A8F026D428D002700016B267 /* ApiClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F026BF28D002700016B267 /* ApiClient.framework */; };
 		A8F026D528D002700016B267 /* ApiClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8F026BF28D002700016B267 /* ApiClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A8F026DC28D002F20016B267 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0269028CFF6B80016B267 /* ApiClient.swift */; };
+		A8F026DE28D010160016B267 /* MainTableVIewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F026DD28D010160016B267 /* MainTableVIewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		A8F026C228D002700016B267 /* ApiClient.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ApiClient.docc; sourceTree = "<group>"; };
 		A8F026C828D002700016B267 /* ApiClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApiClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F026CF28D002700016B267 /* ApiClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientTests.swift; sourceTree = "<group>"; };
+		A8F026DD28D010160016B267 /* MainTableVIewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableVIewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 			children = (
 				A8F0265928CFDFE60016B267 /* MainViewController.swift */,
 				A8F0268C28CFE68E0016B267 /* MainView.swift */,
+				A8F026DD28D010160016B267 /* MainTableVIewCell.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 			files = (
 				A8F0268928CFE2D60016B267 /* Coordinator.swift in Sources */,
 				A8F0268D28CFE68E0016B267 /* MainView.swift in Sources */,
+				A8F026DE28D010160016B267 /* MainTableVIewCell.swift in Sources */,
 				A8F0265A28CFDFE60016B267 /* MainViewController.swift in Sources */,
 				A8F0265628CFDFE60016B267 /* AppDelegate.swift in Sources */,
 				A8F0268B28CFE4560016B267 /* MainCoordinator.swift in Sources */,

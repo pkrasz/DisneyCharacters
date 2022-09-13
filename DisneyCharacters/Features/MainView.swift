@@ -14,7 +14,7 @@ class MainView: UIView {
     let disneyTableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.backgroundColor = .white
+        tableView.backgroundColor = .clear
         return tableView
     }()
     

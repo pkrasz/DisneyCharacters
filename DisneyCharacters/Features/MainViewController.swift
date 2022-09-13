@@ -15,13 +15,18 @@ public protocol DataFetchable {
 
 class MainViewController: UIViewController, Coordinating {
 
-
     //MARK: - Properties
     
     let dataFetchable: DataFetchable
     var coordinator: Coordinator?
     
-    var charactersArr: [Character] = []
+    var charactersArr: [Character] = [] {
+        didSet {
+            DispatchQueue.main.async {
+                self.contentView.disneyTableView.reloadData()
+            }
+        }
+    }
     
     var contentView: MainView {
         return view as! MainView
@@ -56,6 +61,9 @@ class MainViewController: UIViewController, Coordinating {
     
     private func setupView() {
         self.navigationController?.navigationBar.backgroundColor = .systemCyan
+        contentView.disneyTableView.dataSource = self
+        contentView.disneyTableView.delegate = self
+        contentView.disneyTableView.register(DisneyTableViewCell.self, forCellReuseIdentifier: DisneyTableViewCell.identifier)
     }
     
     private func setupBindings() {
@@ -74,5 +82,20 @@ class MainViewController: UIViewController, Coordinating {
    
 }
 
+//MARK: - Extensions
+
+extension MainViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return charactersArr.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: DisneyTableViewCell.identifier, for: indexPath) as! DisneyTableViewCell
+        let character = charactersArr[indexPath.row]
+        cell.nameLabel.text = character.name
+        return cell
+    }
+}
 
 
